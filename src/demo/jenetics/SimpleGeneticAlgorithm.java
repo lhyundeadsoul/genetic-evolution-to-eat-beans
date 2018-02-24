@@ -16,7 +16,7 @@ public class SimpleGeneticAlgorithm {
     }
 
     public static void main(String[] args) {
-        Factory<Genotype<BitGene>> gtf = Genotype.of(BitChromosome.of(10, 0.5));
+        Factory<Genotype<BitGene>> gtf = Genotype.of(BitChromosome.of(20, 0.3));
         System.out.println("Before the evolution:\n" + gtf);
 
         Engine<BitGene, Integer> engine = Engine.builder(SimpleGeneticAlgorithm::eval, gtf)
